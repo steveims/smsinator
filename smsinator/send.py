@@ -35,7 +35,7 @@ def main():
 
                 message = client.messages.create(
                         messaging_service_sid='MGcfadc2cf6a443e9bed782a44923dfc03',
-                        body=args.message.format(name=row['name']),
+                        body=args.message.format(name=row['name']).replace("\\n", '\n'),
                         to=row['phone_number'])
     
             except Exception as x:
