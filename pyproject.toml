@@ -16,3 +16,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 smsinator = "smsinator.send:main"
+make_dir = "smsinator.make_dir:main"
